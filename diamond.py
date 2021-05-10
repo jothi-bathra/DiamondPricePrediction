@@ -34,5 +34,9 @@ def input():
 
         return render_template('output.html', msg=msg)
 
+@app.route('/')
+def submit():
+    return render_template('input.html')
+    
 if __name__ == '__main__':
     app.run(debug=True)
